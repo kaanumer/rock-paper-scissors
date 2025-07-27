@@ -1,26 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./style.css">
     <title>Rock Paper ScissorJS</title>
-    <style>
-        * {
-            background-color: darkslateblue;
-            color: coral;
-        }
-    </style>
 </head>
+
 <body>
-    <h1>Play the <em>Rock - Paper - Scissors game</em> through the (F12) console.</h1>
-    <h2>Game Rules:</h2>
+    <h1>Play the <em>Rock - Paper - Scissors game</em> with the buttons below.</h1>
+
+    <div class="container">
+        <div class="selection">
+            <img src="./images/hand-rock.png" alt="hand-rock icon">
+            <button id="rock">Rock</button>
+        </div>
+        <div class="selection">
+            <img src="./images/hand-paper.png" alt="hand-paper icon">
+            <button id="paper">Paper</button>
+        </div>
+        <div class="selection">
+            <img src="./images/hand-scissors.png" alt="hand-scissors icon">
+            <button id="scissors">Scissors</button>
+        </div>
+    </div>
+
+    <div id="scoreboard">
+        <h2>Scoreboard</h2>
+        <p>Human <span class="human-score">0</span> - <span class="computer-score">0</span> Computer</p>
+        <button id="reset">Reset game</button>
+    </div>
+
+    <h3 id="game-rules">Game Rules:</h3>
     <ul>
         <li>Rock beats Scissors</li>
         <li>Paper beats Rock</li>
         <li>Scissors beats Paper</li>
+        <li>Game ends once a player reaches 5</li>
+    </ul>
+
+    <h3 id="credits">Credits</h3>
+    <ul>
+        <li> Hand-rock icon:
+            <a href="https://www.flaticon.com/free-icons/fist" title="fist icons">Fist icons created by Ayub Irawan -
+                Flaticon</a>
+        </li>
+        <li> Hand-paper icon:
+            <a href="https://www.flaticon.com/free-icons/stop" title="stop icons">Stop icons created by Freepik -
+                Flaticon</a>
+        </li>
+        <li> Hand-scissors icon:
+            <a href="https://www.flaticon.com/free-icons/rock-paper-scissors" title="rock paper scissors icons">Rock
+                paper scissors icons created by Cap Cool - Flaticon</a>
+        </li>
     </ul>
 
     <script src="script.js"></script>
+
 </body>
+
 </html>
